@@ -1,0 +1,25 @@
+{
+  "name": "fbj-faq-accordion",
+  "version": "1.0.0",
+  "description": "My implementation of the Frontend Master's project 'FAQ Accordion' ",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "Francis Judge<fjudge7@gmail.com>",
+  "license": "ISC",
+  "packageManager": "pnpm@10.27.0",
+  "dependencies": {
+    "@astrojs/alpinejs": "^0.4.9",
+    "@types/alpinejs": "^3.13.11",
+    "alpinejs": "^3.15.8"
+  },
+  "devDependencies": {
+    "astro": "^5.18.0",
+    "browserslist": "^4.28.1",
+    "lightningcss": "^1.32.0",
+    "typescript": "^5.9.3"
+  }
+}

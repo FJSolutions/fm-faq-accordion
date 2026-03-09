@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/main-layout.astro"
+import FaqItem from "../components/faq-item.astro"
+---
+
+<Layout title="FAQ accordion (Frontend Mentor)">
+   <main>
+      <article>
+         <h1>
+            <img src="/images/icon-star.svg" alt="Frequently Asked Questions">
+            <span>FAQs</span>
+         </h1>
+         <FaqItem>
+            <Fragment slot="title">What is Frontend Mentor, and how will it help me?</Fragment>
+            <Fragment slot="definition">
+               Frontend Mentor offers realistic coding challenges to help developers improve
+               their frontend coding skills with projects in HTML, CSS, and JavaScript. It's
+               suitable for all levels and ideal for portfolio building.
+            </Fragment>
+         </FaqItem>
+         <FaqItem>
+            <Fragment slot="title">Is Frontend Mentor free?</Fragment>
+            <Fragment slot="definition">Yes, Frontend Mentor offers both free and premium coding
+               challenges, with the free option providing access to a range of projects suitable
+               for all skill levels.
+            </Fragment>
+         </FaqItem>
+         <FaqItem>
+            <Fragment slot="title">Can I use Frontend Mentor projects in my portfolio?</Fragment>
+            <Fragment slot="definition">
+               Yes, you can use projects completed on Frontend Mentor in
+               your portfolio. It's an excellent way to showcase your skills to potential
+               employers!
+            </Fragment>
+         </FaqItem>
+         <FaqItem>
+            <Fragment
+                slot="title">How can I get help if I'm stuck on a Frontend Mentor challenge?
+            </Fragment>
+            <Fragment slot="definition">
+               <p>
+                  The best place to get help is inside Frontend Mentor's Discord
+                  community.
+               </p>
+               <p>
+                  There's a help
+                  channel where you can ask questions and seek support from other community
+                  members.</p>
+            </Fragment>
+         </FaqItem>
+      </article>
+   </main>
+</Layout>

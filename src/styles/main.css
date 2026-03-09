@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("/fonts/WorkSans-Regular.ttf") format("truetype"),
+  url("/fonts/WorkSans-Bold.ttf") format("truetype"),
+  url("/fonts/WorkSans-SemiBold.ttf") format("truetype");
+}
+
+:root {
+  --white: hsl(0, 100%, 100%);
+  --purple-100: hsl(275, 100%, 97%);
+  --purple-600: hsl(292, 16%, 49%);
+  --purple-700: hsl(280, 82%, 47%);
+  --purple-950: hsl(292, 42%, 14%);
+  --gray-25: hsl(0, 0%, 35%);
+  --gray-75: hsl(0, 0%, 95%);
+
+  --font-normal: 400;
+  --font-semibold: 600;
+  --font-bold: 700;
+}
+
+* {
+  font-family: 'Work Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-style: var(--font-normal);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex; /* Makes the body a flex container */
+  flex-direction: column; /* Stacks children vertically */
+  min-height: 100dvh;
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
+  background-repeat: no-repeat;
+  background-color: var(--purple-100);
+  width: 100%;
+  padding-block-start: 7rem;
+}
+
+main {
+  flex-grow: 1;
+  margin: 0 auto;
+  max-width: 32rem;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1.5rem;
+  font-weight: var(--font-bold);
+  margin-block-end: 1rem;
+}
+
+article {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: var(--white);
+}
+
+.faq-item {
+  border-radius: unset;
+
+  &:not(:last-child) {
+    padding-block-end: 1.2rem;
+    border-bottom: solid 1px var(--gray-75);
+  }
+
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: var(--font-semibold);
+    font-size: 1rem;
+    margin: 0.2rem 0;
+    cursor: pointer;
+
+    img {
+      padding-left: 2.0rem;
+    }
+
+    &:hover {
+      color: var(--purple-700);
+    }
+  }
+
+
+  section {
+    font-size: 0.9rem;
+    padding-block-start: 0.4rem;
+    color: var(--gray-25);
+    line-height: 1.2rem;
+
+    p {
+      margin: 1rem 0;
+    }
+  }
+}
+
+footer {
+  font-size: 0.75rem;
+  text-align: center;
+  width: 100%;
+  color: var(--gray-25);
+
+  a {
+    color: var(--purple-600);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Mobile screen */
+@media screen and (width < 32rem) {
+  body {
+    background-image: url("/images/background-pattern-mobile.svg");
+  }
+
+  h1 > img {
+    height: 25px;
+    width: 25px;
+  }
+
+  main {
+    margin: 1.5rem;
+  }
+}
+
+/* Desktop screen */
+@media screen and (min-width: 32rem) {
+  body {
+    background-image: url("/images/background-pattern-desktop.svg");
+  }
+}

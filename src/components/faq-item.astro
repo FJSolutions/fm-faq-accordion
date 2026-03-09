@@ -1,0 +1,16 @@
+---
+
+---
+
+<article class="faq-item" x-data="{ expanded: false }" x-id="['faq-question', 'faq-definition']">
+   <h2 @click="expanded = !expanded" :aria-expanded="expanded"
+       :aria-controls="$id('faq-definition')" :id="$id('faq-question')">
+      <span><slot name="title"></slot></span>
+      <img src="/images/icon-minus.svg" alt="hide FAQ item" x-show="expanded"/>
+      <img src="/images/icon-plus.svg" alt="expand FAQ item" x-show="!expanded"/>
+   </h2>
+   <section x-show="expanded === true" :id="$id('faq-definition')" :aria-hidden="!expanded"
+            :aria-labelledby="$id('faq-question')">
+      <slot name="definition"></slot>
+   </section>
+</article>
