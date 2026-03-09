@@ -28,8 +28,8 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Links
 
-- Solution URL: https://github.com/FJSolutions/fm-faq-accordion
-- Live Site URL: https://fbj-faq-accordion.fjudge7.workers.dev/
+- Solution URL: https://github.com/FJSolutions/fm-faq-accordion/
+- Live Site URL: https://fbj-faq-accordion.netlify.app/
 
 ## My process
 
@@ -61,7 +61,8 @@ timer I check it.
 I have been using [Netlify](https://app.netlify.com/) up to now for deployment as it is incredibly
 easy to use, but I have been wanting to use [Cloudflare](https://dash.cloudflare.com/) for a while
 as they provide a database option. I would like to use that for a side project in the near
-future. It proved to be a incredibly easy to setup and deploy.
+future. It proved to be a incredibly easy to setup and deploy. Unfortunately I had to move it back
+to Netlify as Frontend Mentor doesnt accept Cloudflare.
 
 Fot the first time doing a Frontend Mentor project I came in ahead of time! I mostly put this down
 to increased familiarity with the tools I'm using.
