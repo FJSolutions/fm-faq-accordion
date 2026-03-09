@@ -1,6 +1,7 @@
 # FAQ accordion solution (Frontend Mentor)
 
-This is my solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz).
+This is my solution to
+the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz).
 Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
@@ -11,7 +12,6 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
 - [Author](#author)
 
 ## Overview
@@ -28,59 +28,43 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/FJSolutions/fm-faq-accordion
+- Live Site URL: https://fbj-faq-accordion.fjudge7.workers.dev/
 
 ## My process
-
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [Astro](https://astro.build/)
 - [AlpineJS](https://alpinejs.dev/) - for interactivity
 - [LightningCSS](https://lightningcss.dev/) - For styles
-
-- Deploy on [Cloudflare Workers](https://dash.cloudflare.com/)
+- [Cloudflare Workers](https://dash.cloudflare.com/)
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project.
-Writing these out and providing code samples of areas you want to highlight is a great way to
-reinforce your own knowledge.
+It was my first time using `astro` for anything and I have wanted to use it for project for some
+time - what a great experience! All the benefits of client-side components but all done at compile
+time. I made three levels of abstraction: page layout, page, faq-item component &ndash; with I made
+interactive with `alpinejs`.
 
-To see how you can add code snippets, see below:
+Using `alpinejs` in `astro` was a breeze as the setup wit well documented and easily searchable in
+their documentation. I am now set on `lightningcss` for CSS processing so there were very few new
+things (ie. it was a low risk project).
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Using Lighthouse in Google Chrome is getting easier and there are fewer things to find and fix every
+timer I check it.
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+I have been using [Netlify](https://app.netlify.com/) up to now for deployment as it is incredibly
+easy to use, but I have been wanting to use [Cloudflare](https://dash.cloudflare.com/) for a while
+as they provide a database option. I would like to use that for a side project in the near
+future. It proved to be a incredibly easy to setup and deploy.
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking
-out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These
-could be concepts you're still not completely comfortable with or techniques you found useful that
-you want to refine and perfect.
+Fot the first time doing a Frontend Mentor project I came in ahead of time! I mostly put this down
+to increased familiarity with the tools I'm using.
 
 ## Author
 
