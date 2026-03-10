@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "pnpm run build && wrangler dev",
+    "deploy": "pnpm run build && wrangler deploy",
+    "cf-typegen": "wrangler types"
   },
   "keywords": [],
   "author": "Francis Judge<fjudge7@gmail.com>",
@@ -13,6 +15,7 @@
   "packageManager": "pnpm@10.27.0",
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.9",
+    "@astrojs/cloudflare": "^12.6.12",
     "@types/alpinejs": "^3.13.11",
     "alpinejs": "^3.15.8"
   },
@@ -20,6 +23,7 @@
     "astro": "^5.18.0",
     "browserslist": "^4.28.1",
     "lightningcss": "^1.32.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "wrangler": "^4.71.0"
   }
 }
