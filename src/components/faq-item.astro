@@ -4,7 +4,8 @@
 
 <article class="faq-item" x-data="{ expanded: false }" x-id="['faq-question', 'faq-definition']">
    <h2 @click="expanded = !expanded" :aria-expanded="expanded"
-       :aria-controls="$id('faq-definition')" :id="$id('faq-question')">
+       :aria-controls="$id('faq-definition')" :id="$id('faq-question')"
+      tabindex="0" @keypress="if($event.code === 'Space' || $event.code === 'Enter') { expanded = !expanded}">
       <span><slot name="title"></slot></span>
       <img src="/images/icon-minus.svg" alt="hide FAQ item" x-show="expanded" width="60" height="60"/>
       <img src="/images/icon-plus.svg" alt="expand FAQ item" x-show="!expanded" width="60" height="60"/>
