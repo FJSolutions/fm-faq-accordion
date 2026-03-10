@@ -3,6 +3,8 @@ import {browserslistToTargets} from 'lightningcss';
 import browserslist from 'browserslist';
 import alpinejs from '@astrojs/alpinejs';
 
+import cloudflare from '@astrojs/cloudflare';
+
 export default defineConfig({
   vite: {
     build: {
@@ -19,5 +21,7 @@ export default defineConfig({
       },
     },
   },
+
   integrations: [alpinejs()],
+  adapter: cloudflare(),
 });
